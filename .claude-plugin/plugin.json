@@ -1,0 +1,20 @@
+{
+  "name": "anvendor",
+  "displayName": "anVendor",
+  "version": "1.0.0",
+  "description": "Live SaaS intelligence for competitor prospecting: find companies that use a competitor's SaaS or business service, check your account list for a vendor on demand, and review a company's services with estimated adoption and annual spend.",
+  "author": {
+    "name": "anVendor",
+    "email": "support@anvendor.com",
+    "url": "https://anvendor.com"
+  },
+  "homepage": "https://anvendor.com/docs/api",
+  "license": "MIT",
+  "keywords": [
+    "sales-intelligence",
+    "technographics",
+    "prospecting",
+    "competitor-customers",
+    "saas"
+  ]
+}
