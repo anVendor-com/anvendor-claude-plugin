@@ -9,6 +9,8 @@
     "url": "https://anvendor.com"
   },
   "homepage": "https://anvendor.com/docs/api",
+  "privacyPolicyUrl": "https://anvendor.com/privacy",
+  "icon": ".claude-plugin/icon.png",
   "license": "MIT",
   "keywords": [
     "sales-intelligence",
