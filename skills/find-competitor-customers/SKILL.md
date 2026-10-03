@@ -1,12 +1,12 @@
 ---
 name: find-competitor-customers
-description: Find companies that use a competitor's SaaS product or business service, optionally narrowed by location, industry or company size, and confirm the promising ones. Use when the user asks who uses a vendor (for example "who uses HubSpot in Germany"), wants a prospect list of a competitor's customers, or wants to target accounts on a rival tool.
+description: Find companies that use a competitor's SaaS product or business service, optionally narrowed by location, industry or company size, and check the promising ones. Use when the user asks who uses a vendor (for example "who uses HubSpot in Germany"), wants a prospect list of a competitor's customers, or wants to target accounts on a rival tool.
 ---
 
 # Find a competitor's customers
 
 Uses the anVendor connector. Discovering companies is free; credits are spent only when you
-confirm whether a company uses the service.
+check whether a company uses the service.
 
 ## 1. Build the search
 
@@ -30,9 +30,9 @@ confirm whether a company uses the service.
   - `previously_detected` — found using it earlier.
   - `unconfirmed` — matches the filters but has not been checked for this service.
 - `locked: true` means adoption, headcount and spend stay hidden until the company is
-  confirmed for this service. Never guess them.
+  checked for this service. Never guess them.
 - `recentlyNotDetected: true` means it was checked within 30 days and the service was not
-  found. Do not suggest confirming it again.
+  found. Do not suggest checking it again.
 - `matches` is the total the filters matched; `reachable` is how many can be paged (up to
   10,000). Fetch the next page only when the user asks, by passing `next.offset` (or
   `next.companyCursor`) back with the same filters.
@@ -40,9 +40,9 @@ confirm whether a company uses the service.
 Show the results as a table: company, domain, location, industry, match and last detected
 date. Lead with `detected` and `previously_detected` rows.
 
-## 3. Confirm companies (costs credits)
+## 3. Check companies (costs credits)
 
-When the user wants figures or confirmation for specific companies:
+When the user wants figures or a check for specific companies:
 
 1. Call `scan_service` with the service and the chosen domains, **without** `confirm`. For more
    than one company this returns a quote and starts nothing.

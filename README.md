@@ -13,7 +13,7 @@ answer.
   in with your anVendor account when you connect it.
 - **Skills** that teach Claude the workflows:
   - `find-competitor-customers` — "Who uses Pipedrive among software companies in Germany?"
-    Discovers companies for a service with location, industry and size filters, then confirms
+    Discovers companies for a service with location, industry and size filters, then checks
     the ones you pick.
   - `check-accounts-for-vendor` — "Which of these 200 accounts use Zendesk?" Quotes the cost,
     runs the check after you approve it, and reports detected, not detected and failed
@@ -33,9 +33,9 @@ answer.
 
 ## Credits and costs
 
-Discovering companies is free. You pay only for confirmed results:
+Discovering companies is free. You pay per detection, not per search:
 
-- Confirming whether a company uses a service costs 1 credit, and is refunded when the
+- Checking whether a company uses a service costs 1 credit, and is refunded when the
   service is not found. A company checked within the last 30 days and not found is answered
   free, and so is an answer your account already holds.
 - Analyzing a company costs 1 credit and is refunded when nothing is found.
